@@ -89,7 +89,7 @@ A interface do Swagger fornece:
   - Execute e veja a resposta da API diretamente!
 
 ## 🧍 Customer
-
+#### 1. Métodos
 | Método | Rota                          | Descrição                      |
 |--------|-------------------------------|--------------------------------|
 | GET    | `/customers`                 | Listar todos os clientes       |
@@ -99,6 +99,7 @@ A interface do Swagger fornece:
 | DELETE | `/customers/{id}`            | Remover cliente                |
 | GET    | `/customers/{id}/orders`     | Listar pedidos de um cliente   |
 
+#### 2. Atributos obrigatórios e relacionados
 | Método | Rota | Descrição | Corpo Esperado | Notas Importantes |
 |:------:|:----:|:--------- |:--------------:|:-----------------:|
 | GET | `/customers` | Listar todos os clientes | — | — |
@@ -110,6 +111,7 @@ A interface do Swagger fornece:
 
 # 🧾 Order
 
+#### 1. Métodos
 | Método | Rota                                  | Descrição                       |
 |--------|----------------------------------------|---------------------------------|
 | GET    | `/orders`                             | Listar todos os pedidos         |
@@ -119,6 +121,8 @@ A interface do Swagger fornece:
 | PUT    | `/orders/{id}`                        | Atualizar pedido                |
 | DELETE | `/orders/{id}`                        | Remover pedido                  |
 
+
+#### 2. Atributos obrigatórios e relacionados
 | Método | Rota | Descrição | Corpo Esperado | Notas Importantes |
 |:------:|:----:|:--------- |:--------------:|:-----------------:|
 | GET | `/orders` | Listar todos os pedidos | — | — |
