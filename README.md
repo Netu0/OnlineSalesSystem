@@ -24,7 +24,7 @@ Requisitos de Software
 
 ## 1. Clone o repositório
 - git clone https://github.com/Netu0/OnlineSalesSystem.git
-- cd sistema-vendas-online
+- cd OnlineSalesSystem
 
 ## 2. Configuração do arquivo .env
 É importante que este arquivo esteja na raiz do projeto
