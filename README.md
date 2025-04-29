@@ -20,9 +20,6 @@ Requisitos de Software
 
 - Docker Compose: versão 1.29 ou superior
 
-## Variáveis de Ambiente
-Crie um arquivo .env na raiz do projeto.
-
 # Passo a passo para executar o projeto
 
 ## 1. Clone o repositório
@@ -30,6 +27,7 @@ Crie um arquivo .env na raiz do projeto.
 - cd sistema-vendas-online
 
 ## 2. Configuração do arquivo .env
+É importante que este arquivo esteja na raiz do projeto
 
 - DB_HOST=db
 - DB_PORT=5432
