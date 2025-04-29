@@ -11,7 +11,7 @@ namespace OnlineSalesSystem.Core.Entities
         
         public required Customer Customer { get; set; }
         
-     
+        [Required]
         private DateTime _orderDate;
         
         public DateTime OrderDate

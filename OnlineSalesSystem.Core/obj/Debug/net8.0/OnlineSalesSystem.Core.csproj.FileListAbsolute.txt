@@ -9,3 +9,4 @@ C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Core\obj\Debug\net8.0\Onl
 C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Core\obj\Debug\net8.0\refint\OnlineSalesSystem.Core.dll
 C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Core\obj\Debug\net8.0\OnlineSalesSystem.Core.pdb
 C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Core\obj\Debug\net8.0\ref\OnlineSalesSystem.Core.dll
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Core\obj\Debug\net8.0\OnlineSalesSystem.Core.sourcelink.json

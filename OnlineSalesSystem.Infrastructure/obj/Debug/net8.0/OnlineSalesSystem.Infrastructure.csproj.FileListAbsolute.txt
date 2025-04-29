@@ -15,3 +15,4 @@ C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\
 C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSalesSystem.Infrastructure.pdb
 C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSalesSystem.Infrastructure.genruntimeconfig.cache
 C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\ref\OnlineSalesSystem.Infrastructure.dll
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSalesSystem.Infrastructure.sourcelink.json
