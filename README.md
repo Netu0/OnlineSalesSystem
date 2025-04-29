@@ -21,29 +21,29 @@ Requisitos de Software
 - Docker Compose: versão 1.29 ou superior
 
 ## Variáveis de Ambiente
-Crie um arquivo .env na raiz do projeto com o seguinte conteúdo:
+Crie um arquivo .env na raiz do projeto.
 
+# Passo a passo para executar o projeto
 
-DB_HOST=db
-
-DB_PORT=5432
-
-DB_USER=postgres
-
-DB_PASSWORD=postgres
-
-DB_NAME=sales_db
-
-APP_PORT=5115
-
-## Passo a passo para executar o projeto
-
-# Clone o repositório
-- git clone https://github.com/seu_usuario/sistema-vendas-online.git
+## Clone o repositório
+- git clone https://github.com/Netu0/OnlineSalesSystem.git
 - cd sistema-vendas-online
 
+## Configuração do arquivo .env
 
+- DB_HOST=db
+- DB_PORT=5432
+- DB_USER=postgres
+- DB_PASSWORD=postgres
+- DB_NAME=sales_db
+- APP_PORT=5115
 
+## Subir os containers com Docker Compose
+- docker-compose up --build
+
+## Acesse a documentação da API via Swagger
+A documentação Swagger permite explorar e testar todos os endpoints da aplicação diretamente pelo navegador.
+- 🔗 Acesse: http://localhost:5115/swagger/index.html
 
 
 
