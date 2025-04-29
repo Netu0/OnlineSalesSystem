@@ -1,0 +1,17 @@
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\bin\Debug\net8.0\OnlineSalesSystem.Infrastructure.deps.json
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\bin\Debug\net8.0\OnlineSalesSystem.Infrastructure.runtimeconfig.json
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\bin\Debug\net8.0\OnlineSalesSystem.Infrastructure.dll
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\bin\Debug\net8.0\OnlineSalesSystem.Infrastructure.pdb
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\bin\Debug\net8.0\OnlineSalesSystem.Core.dll
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\bin\Debug\net8.0\OnlineSalesSystem.Core.pdb
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSalesSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSalesSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSalesSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSalesSystem.Infrastructure.AssemblyInfo.cs
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSalesSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSa.CD37B4AC.Up2Date
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSalesSystem.Infrastructure.dll
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\refint\OnlineSalesSystem.Infrastructure.dll
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSalesSystem.Infrastructure.pdb
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\OnlineSalesSystem.Infrastructure.genruntimeconfig.cache
+C:\VendasOnlineTDS\OnlineSalesSystem\OnlineSalesSystem.Infrastructure\obj\Debug\net8.0\ref\OnlineSalesSystem.Infrastructure.dll
