@@ -88,7 +88,7 @@ A interface do Swagger fornece:
   - Clique em "Try it out"
   - Execute e veja a resposta da API diretamente!
 
-## Customer
+## 🧍 Customer
 
 | Método | Rota                          | Descrição                      |
 |--------|-------------------------------|--------------------------------|
@@ -99,7 +99,16 @@ A interface do Swagger fornece:
 | DELETE | `/customers/{id}`            | Remover cliente                |
 | GET    | `/customers/{id}/orders`     | Listar pedidos de um cliente   |
 
-# Order
+| Método | Rota | Descrição | Corpo Esperado | Notas Importantes |
+|:------:|:----:|:--------- |:--------------:|:-----------------:|
+| GET | `/customers` | Listar todos os clientes | — | — |
+| GET | `/customers/{id}` | Obter cliente por ID | — | — |
+| POST | `/customers` | Criar novo cliente | `{ "name": (obrigatório), "email": (obrigatório), "phone": (opcional) }` | - **Email** deve ser um e-mail válido. <br> - **Name** não pode ser vazio. |
+| PUT | `/customers/{id}` | Atualizar cliente existente | `{ "name": (obrigatório), "email": (obrigatório), "phone": (opcional) }` | - **Email** e **Name** continuam obrigatórios.<br> - Atualiza todos os campos do cliente. |
+| DELETE | `/customers/{id}` | Remover cliente | — | - **Não permitido** excluir clientes que possuem pedidos vinculados. |
+| GET | `/customers/{id}/orders` | Listar pedidos do cliente | — | — |
+
+# 🧾 Order
 
 | Método | Rota                                  | Descrição                       |
 |--------|----------------------------------------|---------------------------------|
@@ -109,6 +118,15 @@ A interface do Swagger fornece:
 | POST   | `/orders`                             | Criar novo pedido               |
 | PUT    | `/orders/{id}`                        | Atualizar pedido                |
 | DELETE | `/orders/{id}`                        | Remover pedido                  |
+
+| Método | Rota | Descrição | Corpo Esperado | Notas Importantes |
+|:------:|:----:|:--------- |:--------------:|:-----------------:|
+| GET | `/orders` | Listar todos os pedidos | — | — |
+| GET | `/orders/{id}` | Obter pedido por ID | — | — |
+| GET | `/orders/by-customer/{customerId}` | Listar pedidos de um cliente | — | — |
+| POST | `/orders` | Criar novo pedido | `{ "customerId": (obrigatório), "orderDate": (obrigatório), "total": (obrigatório) }` | - **orderDate** deve ser uma data válida.<br> - **total** deve ser decimal positivo.<br> - **customerId** precisa existir no sistema. |
+| PUT | `/orders/{id}` | Atualizar pedido existente | `{ "customerId": (obrigatório), "orderDate": (obrigatório), "total": (obrigatório) }` | - Mesmas validações do POST. |
+| DELETE | `/orders/{id}` | Remover pedido | — | — |
 
 
 Para detelhas completos e exemplos de requisição/resposta, utilize a interface Swagger.
