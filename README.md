@@ -29,12 +29,12 @@ Requisitos de Software
 ## 2. Configuração do arquivo .env
 É importante que este arquivo esteja na raiz do projeto
 
-- DB_HOST=db
-- DB_PORT=5432
-- DB_USER=postgres
-- DB_PASSWORD=postgres
-- DB_NAME=sales_db
-- APP_PORT=5115
+- DB_HOST=XXX
+- DB_PORT=XXX
+- DB_USER=XXX
+- DB_PASSWORD=XXX
+- DB_NAME=XXX
+- APP_PORT=XXX
 
 ## 3. Configurar o arquivo .yml
 
