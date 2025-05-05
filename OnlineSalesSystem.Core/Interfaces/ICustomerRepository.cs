@@ -10,5 +10,6 @@ namespace OnlineSalesSystem.Core.Interfaces
         Task UpdateAsync(Customer customer);
         Task DeleteAsync(Customer customer);
         Task<IEnumerable<Order>> GetOrdersByCustomerIdAsync(int customerId);
+        Task DeleteAsync(int id);
     }
 }

@@ -1,11 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using OnlineSalesSystem.Infrastructure;
 using OnlineSalesSystem.Infrastructure.Data;
+using OnlineSalesSystem.Api.Extensions;
+using OnlineSalesSystem.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddApplicationServices();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -27,6 +30,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseMiddleware<ExceptionMiddleware>();
 app.MapControllers();
 
 // Apply migrations automatically

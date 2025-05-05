@@ -50,5 +50,10 @@ namespace OnlineSalesSystem.Infrastructure.Repositories
                 .Where(o => o.CustomerId == customerId)
                 .ToListAsync();
         }
+
+        public Task DeleteAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

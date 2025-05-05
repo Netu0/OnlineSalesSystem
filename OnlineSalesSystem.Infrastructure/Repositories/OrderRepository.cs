@@ -49,5 +49,10 @@ namespace OnlineSalesSystem.Infrastructure.Repositories
             _context.Orders.Remove(order);
             await _context.SaveChangesAsync();
         }
+
+        public Task DeleteAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

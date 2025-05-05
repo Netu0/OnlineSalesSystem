@@ -1,28 +1,47 @@
 using Microsoft.EntityFrameworkCore;
 using OnlineSalesSystem.Core.Entities;
 
-namespace OnlineSalesSystem.Infrastructure.Data
+namespace OnlineSalesSystem.Infrastructure.Data;
+
+public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
+    : DbContext(options)
 {
-    public class ApplicationDbContext : DbContext
+    public DbSet<Customer> Customers => Set<Customer>();
+    public DbSet<Order> Orders => Set<Order>();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
-            : base(options)
-        {
-        }
+        base.OnModelCreating(modelBuilder);
 
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Order> Orders { get; set; }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        // Configuração das entidades
+        modelBuilder.Entity<Customer>(entity =>
         {
-            modelBuilder.Entity<Customer>().ToTable("Customers");
-            modelBuilder.Entity<Order>().ToTable("Orders");
+            entity.ToTable("Customers");
             
-            // Configurações de relacionamento
-            modelBuilder.Entity<Order>()
-                .HasOne(o => o.Customer)
-                .WithMany(c => c.Orders)
-                .HasForeignKey(o => o.CustomerId);
-        }
+            // Configurações adicionais do Customer
+            entity.HasKey(c => c.Id);
+            entity.Property(c => c.Name).HasMaxLength(100).IsRequired();
+            entity.Property(c => c.Email).HasMaxLength(100).IsRequired();
+            entity.Property(c => c.Phone).HasMaxLength(20);
+        });
+
+        modelBuilder.Entity<Order>(entity =>
+        {
+            entity.ToTable("Orders");
+            
+            // Configurações adicionais do Order
+            entity.HasKey(o => o.Id);
+            entity.Property(o => o.OrderDate).IsRequired();
+            entity.Property(o => o.Total)
+                  .HasColumnType("decimal(18,2)")
+                  .IsRequired();
+
+            // Relacionamento
+            entity.HasOne(o => o.Customer)
+                  .WithMany(c => c.Orders)
+                  .HasForeignKey(o => o.CustomerId)
+                  .OnDelete(DeleteBehavior.Restrict); // ou Cascade, conforme sua regra de negócio
+        });
+
     }
 }
