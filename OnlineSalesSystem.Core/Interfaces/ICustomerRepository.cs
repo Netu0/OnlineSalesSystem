@@ -8,7 +8,6 @@ namespace OnlineSalesSystem.Core.Interfaces
         Task<Customer> GetByIdAsync(int id);
         Task AddAsync(Customer customer);
         Task UpdateAsync(Customer customer);
-        Task DeleteAsync(Customer customer);
         Task<IEnumerable<Order>> GetOrdersByCustomerIdAsync(int customerId);
         Task DeleteAsync(int id);
     }

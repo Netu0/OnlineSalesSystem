@@ -9,7 +9,7 @@ namespace OnlineSalesSystem.Core.Entities
         [Required]
         public int CustomerId { get; set; }
         
-        public required Customer Customer { get; set; }
+        public Customer? Customer { get; set; }
         
         [Required]
         private DateTime _orderDate;

@@ -44,15 +44,15 @@ namespace OnlineSalesSystem.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(Order order)
+        public async Task DeleteAsync(int id)
         {
-            _context.Orders.Remove(order);
-            await _context.SaveChangesAsync();
+            var order = await _context.Orders.FindAsync(id);
+            if (order != null)
+            {
+                _context.Orders.Remove(order);
+                await _context.SaveChangesAsync();
+            }
         }
 
-        public Task DeleteAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

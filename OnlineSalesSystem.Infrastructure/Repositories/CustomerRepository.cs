@@ -19,7 +19,7 @@ namespace OnlineSalesSystem.Infrastructure.Repositories
             return await _context.Customers.ToListAsync();
         }
 
-        
+
 
         public async Task<Customer> GetByIdAsync(int id)
         {
@@ -38,12 +38,6 @@ namespace OnlineSalesSystem.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(Customer customer)
-        {
-            _context.Customers.Remove(customer);
-            await _context.SaveChangesAsync();
-        }
-
         public async Task<IEnumerable<Order>> GetOrdersByCustomerIdAsync(int customerId)
         {
             return await _context.Orders
@@ -51,9 +45,14 @@ namespace OnlineSalesSystem.Infrastructure.Repositories
                 .ToListAsync();
         }
 
-        public Task DeleteAsync(int id)
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var customer = await _context.Customers.FindAsync(id);
+            if (customer != null)
+            {
+                _context.Customers.Remove(customer);
+                await _context.SaveChangesAsync();
+            }
         }
     }
 }
