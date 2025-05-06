@@ -3,6 +3,9 @@ using OnlineSalesSystem.Infrastructure;
 using OnlineSalesSystem.Infrastructure.Data;
 using OnlineSalesSystem.Api.Extensions;
 using OnlineSalesSystem.Api.Middlewares;
+using OnlineSalesSystem.Api.MappingProfile;
+using AutoMapper;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +20,10 @@ builder.Services.AddSwaggerGen();
 // Add infrastructure layer
 builder.Services.AddInfrastructure(builder.Configuration);
 
+builder.Services.AddAutoMapper(typeof(OrderMappingProfile));
+
 var app = builder.Build();
+//app.UseMiddleware<ExceptionMiddleware>(); //Por equanto não está funcionando, não vou usar
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -30,7 +36,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.UseMiddleware<ExceptionMiddleware>();
+
 app.MapControllers();
 
 // Apply migrations automatically

@@ -36,4 +36,11 @@ public class OrderService(IOrderRepository orderRepository)
     {
         return await _orderRepository.GetByCustomerIdAsync(customerId);
     }
+
+    // Adicione este novo método:
+    public async Task<Order> CreateAsync(Order order)
+    {
+        await _orderRepository.AddAsync(order);
+        return order; // Retorna a order com ID preenchido
+    }
 }

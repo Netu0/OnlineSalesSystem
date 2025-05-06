@@ -8,7 +8,7 @@ public class ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddlewa
 {
     private readonly RequestDelegate _next = next;
     private readonly ILogger<ExceptionMiddleware> _logger = logger;
-
+/*
     public async Task InvokeAsync(HttpContext context)
     {
         try
@@ -21,7 +21,7 @@ public class ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddlewa
             await HandleExceptionAsync(context, ex);
         }
     }
-
+*/
     private static Task HandleExceptionAsync(HttpContext context, Exception exception)
     {
         context.Response.ContentType = "application/json";
