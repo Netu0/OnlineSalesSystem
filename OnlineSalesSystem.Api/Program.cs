@@ -1,31 +1,71 @@
 using Microsoft.EntityFrameworkCore;
-using OnlineSalesSystem.Infrastructure;
 using OnlineSalesSystem.Infrastructure.Data;
+using OnlineSalesSystem.Core.Interfaces;
+using OnlineSalesSystem.Infrastructure.Repositories;
+using OnlineSalesSystem.Core.Services;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using OnlineSalesSystem.Api.Extensions;
 using OnlineSalesSystem.Api.Middlewares;
-using OnlineSalesSystem.Api.MappingProfile;
 using AutoMapper;
+using OnlineSalesSystem.Api.MappingProfile;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllers();
-builder.Services.AddApplicationServices();
+// Configuração do banco de dados
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+if (string.IsNullOrEmpty(connectionString))
+{
+    throw new Exception("Connection string 'DefaultConnection' not found.");
+}
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddDbContext<ApplicationDbContext>(options => 
+    options.UseNpgsql(connectionString));
+
+// Configuração do JWT
+var jwtSecret = builder.Configuration["Jwt:Key"];
+if (string.IsNullOrEmpty(jwtSecret))
+{
+    throw new Exception("JWT Secret is not configured.");
+}
+
+var key = Encoding.UTF8.GetBytes(jwtSecret);
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.RequireHttpsMetadata = false;
+        options.SaveToken = true;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            ValidateLifetime = true,
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+
+// Configurações da aplicação
+builder.Services.AddAuthorization();
+builder.Services.AddApplicationServices();
+builder.Services.AddAutoMapper(typeof(OrderMappingProfile));
+
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Add infrastructure layer
-builder.Services.AddInfrastructure(builder.Configuration);
-
-builder.Services.AddAutoMapper(typeof(OrderMappingProfile));
+builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
-//app.UseMiddleware<ExceptionMiddleware>(); //Por equanto não está funcionando, não vou usar
 
-// Configure the HTTP request pipeline.
+// Pipeline de requisições HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -33,13 +73,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
-
-
 app.MapControllers();
 
-// Apply migrations automatically
+// Aplicar migrações automaticamente
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
