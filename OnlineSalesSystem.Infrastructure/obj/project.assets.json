@@ -3256,11 +3256,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj",
+      "projectUniqueName": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj",
       "projectName": "OnlineSalesSystem.Infrastructure",
-      "projectPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj",
+      "projectPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\",
-      "outputPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Infrastructure\\obj\\",
+      "outputPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Oswaldo Beltrani Net\\AppData\\Roaming\\NuGet\\NuGet.Config",
