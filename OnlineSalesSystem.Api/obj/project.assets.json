@@ -5263,11 +5263,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\VendasOnlineTDS\\onlinesalessystem\\onlinesalessystem.api\\OnlineSalesSystem.Api.csproj",
+      "projectUniqueName": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Api\\OnlineSalesSystem.Api.csproj",
       "projectName": "OnlineSalesSystem.Api",
-      "projectPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\onlinesalessystem.api\\OnlineSalesSystem.Api.csproj",
+      "projectPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Api\\OnlineSalesSystem.Api.csproj",
       "packagesPath": "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\",
-      "outputPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\onlinesalessystem.api\\obj\\",
+      "outputPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Oswaldo Beltrani Net\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5285,11 +5285,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj": {
-              "projectPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj"
+            "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj": {
+              "projectPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj"
             },
-            "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj": {
-              "projectPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj"
+            "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj": {
+              "projectPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj"
             }
           }
         }

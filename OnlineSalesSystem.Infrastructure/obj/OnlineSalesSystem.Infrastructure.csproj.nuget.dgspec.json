@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj": {}
+    "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj": {
+    "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj",
+        "projectUniqueName": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj",
         "projectName": "OnlineSalesSystem.Core",
-        "projectPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj",
+        "projectPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj",
         "packagesPath": "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\",
-        "outputPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Core\\obj\\",
+        "outputPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Oswaldo Beltrani Net\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj": {
+    "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj",
+        "projectUniqueName": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj",
         "projectName": "OnlineSalesSystem.Infrastructure",
-        "projectPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj",
+        "projectPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\",
-        "outputPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Infrastructure\\obj\\",
+        "outputPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Oswaldo Beltrani Net\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -112,8 +112,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj": {
-                "projectPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj"
+              "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj": {
+                "projectPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj"
               }
             }
           }

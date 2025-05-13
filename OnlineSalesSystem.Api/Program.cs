@@ -106,8 +106,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 // Registro de serviços
-builder.Services.AddScoped<AuthService>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddApplicationServices();
 
 var app = builder.Build();
 
@@ -126,7 +125,7 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
-//app.UseMiddleware<ExceptionMiddleware>();
+app.UseMiddleware<ExceptionMiddleware>();
 app.MapControllers();
 
 // ========== APLICAÇÃO DE MIGRAÇÕES ==========

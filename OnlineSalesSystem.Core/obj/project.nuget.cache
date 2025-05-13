@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0hFgDR5axBs=",
+  "dgSpecHash": "sq+BVe9ofpw=",
   "success": true,
-  "projectFilePath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj",
+  "projectFilePath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\microsoft.bcl.memory\\9.0.0\\microsoft.bcl.memory.9.0.0.nupkg.sha512",

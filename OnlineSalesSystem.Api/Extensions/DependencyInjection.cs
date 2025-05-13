@@ -11,11 +11,14 @@ public static class DependencyInjection
         // Registro dos repositórios
         services.AddScoped<ICustomerRepository, CustomerRepository>();
         services.AddScoped<IOrderRepository, OrderRepository>();
-        
+
         // Registro dos serviços
         services.AddScoped<CustomerService>();
         services.AddScoped<OrderService>();
-        
+
+        services.AddScoped<AuthService>();
+        services.AddScoped<IUserRepository, UserRepository>();
+
         return services;
     }
 }

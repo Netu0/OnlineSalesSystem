@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1cHeXjxbwKc=",
+  "dgSpecHash": "lfnNgi8u3KU=",
   "success": true,
-  "projectFilePath": "C:\\VendasOnlineTDS\\onlinesalessystem\\onlinesalessystem.api\\OnlineSalesSystem.Api.csproj",
+  "projectFilePath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.api\\OnlineSalesSystem.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

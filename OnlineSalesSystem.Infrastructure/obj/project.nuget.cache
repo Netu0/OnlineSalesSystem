@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KRH7fDX8URI=",
+  "dgSpecHash": "iRpe6RcIfqk=",
   "success": true,
-  "projectFilePath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj",
+  "projectFilePath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Infrastructure\\OnlineSalesSystem.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

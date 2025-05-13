@@ -3278,8 +3278,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj": {
-              "projectPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj"
+            "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj": {
+              "projectPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj"
             }
           }
         }
