@@ -135,11 +135,12 @@ A interface do Swagger fornece:
 
 Para detelhas completos e exemplos de requisição/resposta, utilize a interface Swagger.
 
+## Json Web Token
+O JWT é um método seguro e compacto de transmitir inforamções entre duas partes, normalmente entre cliente e um servidor. Basicamente, é composto por uma string compacta e segura para URLs que contém informações em formato de JSON, como dados de usuários, e é assinado para garantir sua autencidade e integridade.
+Atualmente, esta aplicação contém implementada a validação JWT, criando a diferenciação de níveis de acesso de um usuário cliente e administrador. Essa mudança trás a possibilidade futura de implementação de funcionalidades em que apenas administradores podem acessar, limitando os usuários normais e garantindo a segurança da aplicação através de conteúdos protegidos.
+
+
 ## ✅ Observações Importantes
 
 - A documentação da API está disponível via Swagger: (http://localhost:5115/swagger/index.html)
-- Não é permitido excluir clientes com pedidos vinculados.
-- Validação de e-mail e telefone é obrigatória.
-- O campo `total` nos pedidos deve conter valor decimal válido.
-- Expansões futuras podem incluir produtos, itens do pedido e status do pedido.
-- A versão atual da API pode conter inconsistências relacionadas a ORDER.
+- Não é permitido excluir clientes com pedidos vinculados
