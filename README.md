@@ -139,8 +139,20 @@ Para detelhas completos e exemplos de requisição/resposta, utilize a interface
 O JWT é um método seguro e compacto de transmitir inforamções entre duas partes, normalmente entre cliente e um servidor. Basicamente, é composto por uma string compacta e segura para URLs que contém informações em formato de JSON, como dados de usuários, e é assinado para garantir sua autencidade e integridade.
 Atualmente, esta aplicação contém implementada a validação JWT, criando a diferenciação de níveis de acesso de um usuário cliente e administrador. Essa mudança trás a possibilidade futura de implementação de funcionalidades em que apenas administradores podem acessar, limitando os usuários normais e garantindo a segurança da aplicação através de conteúdos protegidos.
 
+## Configurações do Docker para fazer conteiners da aplicação
+- `OnlineSalesSystem.Api/`: API principal
+- `OnlineSalesSystem.Core/`: Interfaces e serviços de domínio
+- `OnlineSalesSystem.Infrastructure/`: Repositórios e contexto de banco de dados
+
+## 🐳 Como Executar com Docker
+1. Certifique-se de ter [Docker](https://www.docker.com/) instalado.
+2. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/OnlineSalesSystem.git
+   cd OnlineSalesSystem
+3. Execute a aplicação `docker-compose up --build`
 
 ## ✅ Observações Importantes
 
-- A documentação da API está disponível via Swagger: (http://localhost:5115/swagger/index.html)
+- A documentação da API está disponível via Swagger: ([http://localhost:5115/swagger/index.html](http://localhost:5000/swagger)
 - Não é permitido excluir clientes com pedidos vinculados
