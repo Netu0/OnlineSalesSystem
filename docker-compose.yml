@@ -17,6 +17,25 @@ services:
       timeout: 5s
       retries: 5
 
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: onlinesales-api
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=${DB_NAME:-OnlineSalesDB};Username=${DB_USER:-postgres};Password=${DB_PASSWORD:-Senha123}
+      - Jwt__Key=${JWT_KEY:-supersecretkeysupersecretkeysupersecretkey}
+      - Jwt__Issuer=${JWT_ISSUER:-OnlineSalesSystem}
+      - Jwt__Audience=${JWT_AUDIENCE:-OnlineSalesUsers}
+      - Jwt__ExpireHours=${JWT_EXPIRE_HOURS:-24}
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+
 volumes:
   postgres-data:
     name: sales-postgres-data

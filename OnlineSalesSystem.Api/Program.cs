@@ -14,6 +14,10 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// ---------- Adicionado para rodar no Docker ----------
+builder.WebHost.UseUrls("http://0.0.0.0:5000");
+
+
 // ========== CONFIGURAÇÃO JWT ==========
 var jwtConfig = builder.Configuration.GetSection("Jwt");
 
@@ -107,6 +111,9 @@ builder.Services.AddSwaggerGen(c =>
 
 // Registro de serviços
 builder.Services.AddApplicationServices();
+
+builder.WebHost.UseUrls("http://0.0.0.0:5000");
+
 
 var app = builder.Build();
 

@@ -590,21 +590,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\VendasOnlineTDS\\onlinesalessystem\\onlinesalessystem.core\\OnlineSalesSystem.Core.csproj",
+      "projectUniqueName": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj",
       "projectName": "OnlineSalesSystem.Core",
-      "projectPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\onlinesalessystem.core\\OnlineSalesSystem.Core.csproj",
+      "projectPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\OnlineSalesSystem.Core.csproj",
       "packagesPath": "C:\\Users\\Oswaldo Beltrani Net\\.nuget\\packages\\",
-      "outputPath": "C:\\VendasOnlineTDS\\onlinesalessystem\\onlinesalessystem.core\\obj\\",
+      "outputPath": "C:\\VendasOnlineTDS\\OnlineSalesSystem\\OnlineSalesSystem.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Oswaldo Beltrani Net\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Oswaldo Beltrani Net\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -666,7 +664,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.409/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
