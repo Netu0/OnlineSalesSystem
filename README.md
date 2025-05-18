@@ -154,5 +154,5 @@ Atualmente, esta aplicação contém implementada a validação JWT, criando a d
 
 ## ✅ Observações Importantes
 
-- A documentação da API está disponível via Swagger: ([http://localhost:5115/swagger/index.html](http://localhost:5000/swagger)
+- A documentação da API está disponível via Swagger: ([http://localhost:5000/swagger])
 - Não é permitido excluir clientes com pedidos vinculados
